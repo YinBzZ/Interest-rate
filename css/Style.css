@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	border-radius: 0.888888rem;
+}
+
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+	background-color: black;
+}
+
+#Wrap {
+	height: 100%;
+	font-size: 0.888888rem;
+	background-color: chocolate;
+}
+
+legend {
+	text-align: center;
+}
+
+fieldset{
+	height: 60%;
+}
+
+#Money {
+	text-align: center;
+	width: 1.481481rem;
+	height: 1.185185rem;
+}
