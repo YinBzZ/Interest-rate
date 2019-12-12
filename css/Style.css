@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	border-radius: 0.888888rem;
+	border-radius: 1.2rem;
 }
 
 html,
@@ -13,20 +13,43 @@ body {
 
 #Wrap {
 	height: 100%;
-	font-size: 0.888888rem;
-	background-color: chocolate;
-}
-
-legend {
-	text-align: center;
-}
-
-fieldset{
-	height: 60%;
+	font-size: 0.7rem;
+	/* line-height: 1.5rem; */
+	color: white;
+	background-color: #0c1749;
 }
 
 #Money {
+	float: right;
 	text-align: center;
-	width: 1.481481rem;
-	height: 1.185185rem;
+	width: 4rem;
+	height: 1.83rem;
+}
+
+#Results_display{
+	height: 30%;
+}
+
+#Input_area{
+	height: 70%;
+}
+
+.Divs_css{
+	height: 10%;
+	margin: 0.3rem 0rem;
+	line-height: 1.83rem;
+	background-color: #5A73EF;
+}
+
+input {
+	border: none;
+	outline: none;
+	height: 1.2rem;
+}
+
+button {
+	width: 2rem;
+	height: 1.2rem;
+	border: none;
+	outline: none;
 }

@@ -5,23 +5,34 @@
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/Style.css" />
 		<script src="js/IndexJs.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/StyleJs.js" type="text/javascript" charset="utf-8"></script>
 		<title></title>
 	</head>
 	<body>
 		<div id="Wrap">
-			<fieldset id="">
-				<legend>
-					<h2>lilv</h2>
-				</legend>
+			<div id="Results_display">
 				<p>一年后利息为:<span id="Rel1">0</span>元</p>
 				<p>一天利息为:<span id="Rel2">0</span>元</p>
 				<p>现在取出利息为:<span id="Rel3">0</span>元</p>
-				<hr />
-				<p>今日利率为 <span id="Interest_rate">0</span> %</p>
-				<p>存入多少钱 <input type="text" id="Money" value="200" /> 元</p>
-				<p>什么时候存入<input type="date" name="" id="StartDate" value="" /></p>
+			</div>
+
+			<hr />
+
+			<div id="Input_area">
+				<div id="Interest_rate_div" class="Divs_css">
+					<p>&emsp;今日利率为 <span id="Interest_rate">0</span> %</p>
+				</div>
+				<div id="Money_div" class="Divs_css">
+					<p>&emsp;存入多少钱 <input type="text" id="Money" value="200" /></p>
+				</div>
+				<div id="StartDate_div" class="Divs_css">
+					<p>&emsp;什么时候存入 <input type="date" name="" id="StartDate" value="" /></p>
+				</div>
 				<button type="button" onclick="Compute()">计算</button>
-			</fieldset>
+			</div>
+
+
+			
 		</div>
 	</body>
 </html>
