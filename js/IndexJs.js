@@ -3,13 +3,9 @@ var Interest_rate = 0,
 	NowDate = DateDeal(getNowFormatDate()),
 	StartDate = 0;
 
-function Interest_rate_var() {
-	Interest_rate = 3.2;
-	document.getElementById("Interest_rate").innerText = Interest_rate + "%";
-}
-
 function Compute() {
 	StartDate = DateDeal(document.getElementById("StartDate").value);
+	Interest_rate = document.getElementById("Interest_rate").value.replace(/%/g, "");
 	var RelDate = NowDate - StartDate;
 	if (StartDate == "") {
 		RelDate = 0;

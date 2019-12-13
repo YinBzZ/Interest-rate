@@ -8,12 +8,12 @@
 		<script src="js/StyleJs.js" type="text/javascript" charset="utf-8"></script>
 		<title></title>
 	</head>
-	<body onload="Style_start(),Interest_rate_var();">
+	<body>
 		<div id="Wrap">
 			<div id="Results">
-				<div style="height: 10%;font-size: 0.08rem;text-align: center;">利息计算器</div>
+				<div style="height: 10%;font-size: 0.6rem;text-align: center;">利息计算器</div>
 				<div id="Results_display">
-					<table border="0px">
+					<table>
 						<tr>
 							<td>&emsp;一年后利息为:</td>
 							<td><span id="Rel1">0元&emsp;</span></td>
@@ -29,24 +29,29 @@
 					</table>
 				</div>
 			</div>
-
 			<hr />
-
 			<div id="Input_area">
 				<div id="Interest_rate_div" class="Divs_css">
-					<p class="Input_texts">&emsp;今日利率为 <span id="Interest_rate">0</span></p>
+					<p class="Input_texts">&emsp;年化利率为<input type="number" id="Interest_rate" value="3.5" /> %</p>
 				</div>
 				<div id="Money_div" class="Divs_css">
-					<p class="Input_texts">&emsp;存入多少钱 <input type="text" id="Money" value="200" /></p>
+					<p class="Input_texts">&emsp;存入多少钱<input type="number" id="Money" value="200" /> 元</p>
 				</div>
 				<div id="StartDate_div" class="Divs_css">
-					<p class="Input_texts">&emsp;什么时候存入 <input type="date" name="" id="StartDate" value="" /></p>
+					<p class="Input_texts">&emsp;什么时候存入<input type="date" name="" id="StartDate" value="" /> 年/月/日</p>
 				</div>
 				<div class="Divs_css">
-					<button id="Compute_Butt" type="button" onclick="Compute()">计算</button>
+					<p class="Input_texts">&emsp;立即计算<span id="Compute_Butt" type="button" onclick="Compute()">计算</span></p>
 				</div>
 				<footer>
-					<div id="AD" style="height: 60%;">我的其他小工具</div>
+					<div id="AD" style="height: 60%;">
+						<h5>我的其他小工具</h5>
+						<div id="AD_wrap" style="height: 100%;margin: auto;">
+							<div class="AD_Div" onclick="window.open('http://tomato.yinbz.top');">番茄钟</div>
+							<div class="AD_Div" onclick="window.open('http://www.yinbz.top');">主页</div>
+							<div class="AD_Div" onclick="window.open('http://github.com/yinbzz');">Github</div>
+						</div>
+					</div>
 					<p>&reg; Copyright 2019 YinBZ. <br /> Rights Reserved.</p>
 				</footer>
 			</div>
