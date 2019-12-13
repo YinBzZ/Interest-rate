@@ -3,6 +3,18 @@ var doc = win.document;
 var docEl = doc.documentElement;
 var tid;
 
+function Style_start() {
+	var Div_height = document.getElementById("Interest_rate_div").clientHeight + "px";
+	var Names = ["Compute_Butt", "Money", "StartDate"];
+	for (var i = 0; i < 3; i++) {
+		document.getElementsByClassName("Input_texts")[i].style.lineHeight = Div_height;
+	}
+	for (x in Names) {
+		document.getElementById(Names[x]).style.height = Div_height;
+	}
+	document.getElementById("Interest_rate").style.height, lineHeight = Div_height;
+}
+
 function refreshRem() {
 	var width = docEl.getBoundingClientRect().width;
 	var height = docEl.getBoundingClientRect().height;
@@ -26,7 +38,3 @@ win.addEventListener('pageshow', function(e) {
 }, false);
 
 refreshRem();
-
-window.onload = function() {
-	document.getElementById("Money").style.height = document.getElementById("Money_div").clientHeight + "px";
-}

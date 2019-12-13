@@ -8,31 +8,48 @@
 		<script src="js/StyleJs.js" type="text/javascript" charset="utf-8"></script>
 		<title></title>
 	</head>
-	<body>
+	<body onload="Style_start(),Interest_rate_var();">
 		<div id="Wrap">
-			<div id="Results_display">
-				<p>一年后利息为:<span id="Rel1">0</span>元</p>
-				<p>一天利息为:<span id="Rel2">0</span>元</p>
-				<p>现在取出利息为:<span id="Rel3">0</span>元</p>
+			<div id="Results">
+				<div style="height: 10%;font-size: 0.08rem;text-align: center;">利息计算器</div>
+				<div id="Results_display">
+					<table border="0px">
+						<tr>
+							<td>&emsp;一年后利息为:</td>
+							<td><span id="Rel1">0元&emsp;</span></td>
+						</tr>
+						<tr>
+							<td>&emsp;一天利息为:</td>
+							<td><span id="Rel2">0元&emsp;</span></td>
+						</tr>
+						<tr>
+							<td>&emsp;现在取出利息为:</td>
+							<td><span id="Rel3">0元&emsp;</span></td>
+						</tr>
+					</table>
+				</div>
 			</div>
 
 			<hr />
 
 			<div id="Input_area">
 				<div id="Interest_rate_div" class="Divs_css">
-					<p>&emsp;今日利率为 <span id="Interest_rate">0</span> %</p>
+					<p class="Input_texts">&emsp;今日利率为 <span id="Interest_rate">0</span></p>
 				</div>
 				<div id="Money_div" class="Divs_css">
-					<p>&emsp;存入多少钱 <input type="text" id="Money" value="200" /></p>
+					<p class="Input_texts">&emsp;存入多少钱 <input type="text" id="Money" value="200" /></p>
 				</div>
 				<div id="StartDate_div" class="Divs_css">
-					<p>&emsp;什么时候存入 <input type="date" name="" id="StartDate" value="" /></p>
+					<p class="Input_texts">&emsp;什么时候存入 <input type="date" name="" id="StartDate" value="" /></p>
 				</div>
-				<button type="button" onclick="Compute()">计算</button>
+				<div class="Divs_css">
+					<button id="Compute_Butt" type="button" onclick="Compute()">计算</button>
+				</div>
+				<footer>
+					<div id="AD" style="height: 60%;">我的其他小工具</div>
+					<p>&reg; Copyright 2019 YinBZ. <br /> Rights Reserved.</p>
+				</footer>
 			</div>
-
-
-			
 		</div>
 	</body>
 </html>

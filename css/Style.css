@@ -19,25 +19,58 @@ body {
 	background-color: #0c1749;
 }
 
+#Interest_rate {
+	float: right;
+	display: block;
+	width: 4rem;
+	color: #000000;
+	text-align: center;
+	background-color: white;
+}
+
 #Money {
 	float: right;
 	text-align: center;
 	width: 4rem;
-	height: 1.83rem;
+	font-size: 0.7rem;
 }
 
-#Results_display{
-	height: 30%;
+#StartDate {
+	width: 4rem;
+	float: right;
+	text-align: center;
+	font-size: 0.48rem;
 }
 
-#Input_area{
-	height: 70%;
+#Results {
+	height: 35%;
 }
 
-.Divs_css{
-	height: 10%;
+#Rel1,
+#Rel2,
+#Rel3 {
+	float: right;
+}
+
+#Results_display {
+	margin: auto;
+	height: 85%;
+	width: 90%;
+	background-color: #5A73EF;
+}
+
+#Results_display table {
+	height: 100%;
+	width: 100%;
+}
+
+#Input_area {
+	height: 65%;
+}
+
+.Divs_css {
+	height: 13%;
 	margin: 0.3rem 0rem;
-	line-height: 1.83rem;
 	background-color: #5A73EF;
 }
 
@@ -47,9 +80,20 @@ input {
 	height: 1.2rem;
 }
 
-button {
-	width: 2rem;
-	height: 1.2rem;
+#Compute_Butt {
+	display: block;
+	width: 4rem;
 	border: none;
 	outline: none;
+}
+
+footer p {
+	height: 40%;
+	vertical-align: middle;
+}
+
+footer {
+	height: 39%;
+	text-align: center;
+	font-size: 0.4rem;
 }
