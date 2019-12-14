@@ -6,9 +6,17 @@
 		<link rel="stylesheet" type="text/css" href="css/Style.css" />
 		<script src="js/IndexJs.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/StyleJs.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function Style_Start() {
+				var Div_height = document.getElementById("Interest_rate_div").clientHeight + "px";
+				for (var i = 0; i < 4; i++) {
+					document.getElementsByClassName("Input_texts")[i].style.lineHeight = Div_height;
+				}
+			}
+		</script>
 		<title></title>
 	</head>
-	<body>
+	<body onload="Style_Start();">
 		<div id="Wrap">
 			<div id="Results">
 				<div style="height: 10%;font-size: 0.6rem;text-align: center;">利息计算器</div>
@@ -32,13 +40,13 @@
 			<hr />
 			<div id="Input_area">
 				<div id="Interest_rate_div" class="Divs_css">
-					<p class="Input_texts">&emsp;年化利率为<input type="number" id="Interest_rate" value="3.5" /> %</p>
+					<span class="Input_texts">&emsp;年化利率为 %</span><input type="number" id="Interest_rate" value="3.5" />
 				</div>
 				<div id="Money_div" class="Divs_css">
-					<p class="Input_texts">&emsp;存入多少钱<input type="number" id="Money" value="200" /> 元</p>
+					<span class="Input_texts">&emsp;存入多少钱 元</span><input type="number" id="Money" value="200" />
 				</div>
 				<div id="StartDate_div" class="Divs_css">
-					<p class="Input_texts">&emsp;什么时候存入<input type="date" name="" id="StartDate" value="" /> 年/月/日</p>
+					<span class="Input_texts">&emsp;什么时候存入</span><input type="date" name="" id="StartDate" value="" />
 				</div>
 				<div class="Divs_css">
 					<p class="Input_texts">&emsp;立即计算<span id="Compute_Butt" type="button" onclick="Compute()">计算</span></p>
@@ -46,7 +54,7 @@
 				<footer>
 					<div id="AD" style="height: 60%;">
 						<h5>我的其他小工具</h5>
-						<div id="AD_wrap" style="height: 100%;margin: auto;">
+						<div id="AD_wrap" style="height: 100%;margin: auto; width: 100%;">
 							<div class="AD_Div" onclick="window.open('http://tomato.yinbz.top');">番茄钟</div>
 							<div class="AD_Div" onclick="window.open('http://www.yinbz.top');">主页</div>
 							<div class="AD_Div" onclick="window.open('http://github.com/yinbzz');">Github</div>

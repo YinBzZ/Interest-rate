@@ -3,18 +3,6 @@ var doc = win.document;
 var docEl = doc.documentElement;
 var tid;
 
-window.onload = function() {
-	var Div_height = document.getElementById("Interest_rate_div").clientHeight + "px";
-	var Names = ["Compute_Butt", "Money", "StartDate", "Interest_rate", "Compute_Butt"];
-	for (var i = 0; i < 4; i++) {
-		document.getElementsByClassName("Input_texts")[i].style.lineHeight = Div_height;
-	}
-	for (x in Names) {
-		document.getElementById(Names[x]).style.height = Div_height;
-	}
-	document.getElementById("AD_wrap").style.width = document.getElementsByClassName("AD_Div")[1].clientWidth * 3.2 + "px";
-}
-
 function refreshRem() {
 	var width = docEl.getBoundingClientRect().width;
 	var height = docEl.getBoundingClientRect().height;
