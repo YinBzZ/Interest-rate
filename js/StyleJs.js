@@ -19,8 +19,8 @@ function time_run() {
 	console.log(i);
 	if (i <= 100) {
 		document.getElementById("loading").innerHTML = i;
-		i += 2;
-		setTimeout(time_run, 50);
+		i ++;
+		setTimeout(time_run, 25);
 	} else {
 		clearTimeout();
 		setTimeout(function() {
