@@ -1,7 +1,7 @@
 var win = window;
 var doc = win.document;
 var docEl = doc.documentElement;
-var tid;
+var tid, i = 0;
 
 
 function refreshRem() {
@@ -13,10 +13,21 @@ function refreshRem() {
 		var rem = width / (750 / 50);
 	}
 	docEl.style.fontSize = rem + 'px';
-	setTimeout(function() {
-		document.getElementById("Wrap").style.filter = "blur(0rem)";
-		document.getElementById("tisp").hidden = true;
-	}, 10000);
+}
+
+function time_run() {
+	console.log(i);
+	if (i <= 100) {
+		document.getElementById("loading").innerHTML = i;
+		i += 2;
+		setTimeout(time_run, 50);
+	} else {
+		clearTimeout();
+		setTimeout(function() {
+			document.getElementById("Wrap").style.filter = "blur(0rem)";
+			document.getElementById("tisp").hidden = true;
+		}, 1000)
+	}
 }
 
 win.addEventListener('resize', function() {

@@ -8,12 +8,12 @@
 		<script src="js/StyleJs.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			function Style_Start() {
+				document.getElementById("Wrap").style.filter = "blur(1rem)";
+				time_run();
 				var Div_height = document.getElementById("Interest_rate_div").clientHeight + "px";
 				for (var i = 0; i < 4; i++) {
 					document.getElementsByClassName("Input_texts")[i].style.lineHeight = Div_height;
 				}
-				time_run();
-				document.getElementById("Wrap").style.filter = "blur(1rem)";
 			}
 		</script>
 		<title></title>
