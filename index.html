@@ -12,11 +12,16 @@
 				for (var i = 0; i < 4; i++) {
 					document.getElementsByClassName("Input_texts")[i].style.lineHeight = Div_height;
 				}
+				time_run();
+				document.getElementById("Wrap").style.filter = "blur(1rem)";
 			}
 		</script>
 		<title></title>
 	</head>
 	<body onload="Style_Start();">
+		<div id="tisp">
+			<p><span id="loading">0</span>%</p>
+		</div>
 		<div id="Wrap">
 			<div id="Results">
 				<div style="height: 10%;font-size: 0.6rem;text-align: center;">利息计算器</div>

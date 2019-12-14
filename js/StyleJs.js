@@ -3,6 +3,7 @@ var doc = win.document;
 var docEl = doc.documentElement;
 var tid;
 
+
 function refreshRem() {
 	var width = docEl.getBoundingClientRect().width;
 	var height = docEl.getBoundingClientRect().height;
@@ -12,6 +13,10 @@ function refreshRem() {
 		var rem = width / (750 / 50);
 	}
 	docEl.style.fontSize = rem + 'px';
+	setTimeout(function() {
+		document.getElementById("Wrap").style.filter = "blur(0rem)";
+		document.getElementById("tisp").hidden = true;
+	}, 5000);
 }
 
 win.addEventListener('resize', function() {

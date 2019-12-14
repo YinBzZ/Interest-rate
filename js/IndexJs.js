@@ -1,7 +1,8 @@
 var Interest_rate = 0,
 	Money = 0,
 	NowDate = DateDeal(getNowFormatDate()),
-	StartDate = 0;
+	StartDate = 0,
+	i = 0;
 
 function Compute() {
 	StartDate = DateDeal(document.getElementById("StartDate").value);
@@ -19,6 +20,17 @@ function Compute() {
 
 function DateDeal(x) {
 	return x.replace(/-/g, "");
+}
+
+function time_run() {
+	console.log(i);
+	if (i <= 100) {
+		document.getElementById("loading").innerHTML = i;
+		i += 2;
+		setTimeout(time_run,80);
+	} else {
+		clearTimeout();
+	}
 }
 
 function getNowFormatDate() {
