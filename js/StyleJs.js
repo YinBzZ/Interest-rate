@@ -16,7 +16,7 @@ function refreshRem() {
 	setTimeout(function() {
 		document.getElementById("Wrap").style.filter = "blur(0rem)";
 		document.getElementById("tisp").hidden = true;
-	}, 5000);
+	}, 10000);
 }
 
 win.addEventListener('resize', function() {
