@@ -1,113 +1,90 @@
 * {
 	margin: 0;
 	padding: 0;
-	border-radius: 1.2rem;
-	overflow: hidden;
+	box-sizing: border-box;
 }
 
 html,
 body {
-	height: 100%;
-	overflow: hidden;
-	background-color: black;
+	font-size: 12px;
+	height: 100vh;
+	width: 100vw;
 }
 
-input {
-	border: none;
-	outline: none;
-	height: 1.2rem;
-	display: inline-block;
-}
-
-footer p {
-	height: 40%;
-	font: italic 0.7em Georgia, serif;
-}
-
-footer {
-	height: 39%;
-	text-align: center;
-}
-
-#tisp {
-	height: 5rem;
-	width: 5rem;
-	text-align: center;
-	line-height: 4rem;
-	z-index: 999;
-	position: fixed;
-	top: 40%;
-	left: 35%;
-	font-weight: bold;
-	font: italic 1.5em Georgia, serif;
-}
-
-#Wrap {
-	height: 100%;
-	font-size: 0.7rem;
-	/* line-height: 1.5rem; */
-	color: white;
-	background-color: #0c1749;
-}
-
-#Compute_Butt {
-	float: right;
-	display: block;
-	width: 8rem;
-	color: #000000;
-	text-align: center;
-	background-color: #E6427B;
-}
-
-#Money,
-#StartDate,
-#Interest_rate {
-	float: right;
-	height: 100%;
-	text-align: center;
-	width: 6rem;
-	font-size: 0.7rem;
-}
-
-#Results {
-	height: 35%;
-}
-
-#Rel1,
-#Rel2,
-#Rel3 {
-	float: right;
-}
-
-#Results_display {
-	margin: auto;
-	height: 85%;
-	width: 90%;
-	background-color: #5A73EF;
-}
-
-#Results_display table {
+#wrap {
 	height: 100%;
 	width: 100%;
+	max-width: 720px;
+	margin: 0 auto;
+	background-color: #0c1749;
+	color: white;
+	overflow: hidden;
 }
 
-#Input_area {
-	height: 65%;
+#display_area {
+	height: 35%;
 	width: 90%;
-	margin: auto;
+	margin: 5%;
+	font-size: 2rem;
+	background-color: #5A73EF;
+	border-radius: 3rem;
+	display: flex;
+	flex-direction: column;
 }
 
-.Divs_css {
-	height: 13%;
-	margin: 0.3rem 0rem;
-	background-color: #5A73EF;
+.display_div {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
 }
 
-.AD_Div {
-	margin: 0.6rem 0.1rem;
-	height: 45%;
-	width: 31.3%;
-	float: left;
+#input_area {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#AD {
+	height: 10%;
+	width: 100%;
+	background-color: blueviolet;
+}
+
+.input_div {
+	width: 90%;
+	height: 20%;
+	font-size: 2rem;
+	border-radius: 6rem;
 	background-color: #5A73EF;
-	line-height: 1.7rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.input_butt {
+	height: 100%;
+	width: 40%;
+	background-color: white;
+	border-radius: 6rem;
+	overflow: hidden;
+}
+
+.input_butt input {
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+#AD{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
